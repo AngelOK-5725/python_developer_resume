@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (i < text.length) {
             typingEl.innerHTML += text.charAt(i);
             i++;
-            setTimeout(typeEffect, 70);
+            setTimeout(typeEffect, 300);  // Скорость печати (300ms)
         }
     }
 

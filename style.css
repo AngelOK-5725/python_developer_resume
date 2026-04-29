@@ -1,3 +1,4 @@
+/* style.css */
 :root {
     --bg: #0f172a;
     --card: #1e293b;
@@ -12,6 +13,28 @@
     box-sizing: border-box;
     font-family: "Segoe UI", sans-serif;
 }
+#tsparticles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#typing::after {
+    content: "|";
+    animation: blink 1s infinite;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
 a {
     color: var(--accent);
     text-decoration: none;
@@ -19,7 +42,7 @@ a {
     transition: color 0.3s;
 }
 
-a :hover {
+a:hover {
     text-decoration: none;
     color: white;
 }
@@ -29,6 +52,18 @@ body {
     color: var(--text);
     overflow-x: hidden;
 }
+body {
+    background: linear-gradient(270deg, #2a4072, #1e293b, #5c6db7);
+    background-size: 600% 600%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
 .container {
     max-width: 1000px;
@@ -110,8 +145,12 @@ section h2 {
     font-weight: bold;
     transition: transform 0.2s;
 }
-.skills-list span:hover {
+/* .skills-list span:hover {
     transform: scale(1.1);
+} */
+.skills-list span:hover {
+    transform: scale(1.15) rotate(2deg);
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.6);
 }
 
 
@@ -129,10 +168,17 @@ section h2 {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.project-card:hover {
+/* .project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 25px rgba(6, 182, 212, 0.35);
+} */
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:
+        0 0 20px rgba(6, 182, 212, 0.4),
+        0 0 40px rgba(6, 182, 212, 0.2);
 }
+
 
 .project-card video,
 .project-card img {

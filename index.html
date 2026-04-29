@@ -7,11 +7,13 @@
     <title>Тамила Хамраева — Python-разработчик</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
     <body>
     <div class="container">
         <header class="fade-in">
         <!-- <img src="avatar.jpg" alt="Тамила Хамраева" class="avatar"> -->
-        <h1>Тамила Хамраева</h1>
+        <h1 id="typing"></h1>
         <p class="subtitle">Python-разработчик</p>
         <div class="contacts">
             <span>📍 Алматы, Казахстан</span>
@@ -23,7 +25,7 @@
 
         <main>
         <section id="about">
-            <h2>💡 Обо мне</h2>
+            <h2> Обо мне</h2>
             <p>
             Мне 20 лет, я начинаю карьеру в IT и уже почти два года работаю с Python. 
             В IT я пришла не случайно — мне нравится создавать то, что живёт и работает. 
@@ -36,7 +38,7 @@
         </section>
 
         <section id="skills">
-            <h2>🧠 Навыки</h2>
+            <h2> Навыки</h2>
             <div class="skills-list">
             <span>Python</span><span>Django</span><span>Django REST</span>
             <span>SQLite</span><span>Git</span><span>GitHub</span>
@@ -46,13 +48,13 @@
         </section>
 
         <section id="experience">
-            <h2>💼 Опыт работы</h2>
+            <h2> Опыт работы</h2>
             <div class="timeline">
             <div class="timeline-item">
                 <div class="circle"></div>
                 <div class="content">
                 <h3>Python-разработчик — Kwork</h3>
-                <small>январь 2024 — настоящее время (1 год 11 мес.)</small>
+                <small>январь 2024 — настоящее время </small>
                 <ul>
                     <li>Исправление и тестирование программного кода</li>
                     <li>Разработка и интеграция API</li>
@@ -65,39 +67,39 @@
         </section>
 
         <section id="projects">
-            <h2>🚀 Проекты</h2>
+            <h2> Проекты</h2>
             <div class="projects-grid">
 
                 <!-- Проект 1 -->
                 <div class="project-card">
-                <div class="video-container">
-                    <video controls poster="shop_preview.jpg">
-                    <source src="django_shop_demo.mp4" type="video/mp4">
-                    Ваш браузер не поддерживает видео.
-                    </video>
-                </div>
-                <div class="card-content">
-                    <h3> Интернет-магазин на Django</h3>
-                    <p>Полноценное веб-приложение с системой авторизации, корзиной, CRUD для товаров и панелью администратора.</p>
-                    <p class="stack"><b>Технологии:</b> Django, SQLite, Bootstrap, REST API</p>
-                    <a href="#" target="_blank">🔗 Смотреть исходники</a>
-                </div>
+                    <div class="video-container">
+                        <video controls poster="shop_preview.jpg">
+                        <source src="django_shop_demo.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <h3> Интернет-магазин на Django</h3>
+                        <p>Полноценное веб-приложение с системой авторизации, корзиной, CRUD для товаров и панелью администратора.</p>
+                        <p class="stack"><b>Технологии:</b> Django, SQLite, Bootstrap, REST API</p>
+                        <a href="#" target="_blank">🔗 Смотреть исходники</a>
+                    </div>
                 </div>
 
                 <!-- Проект 2 -->
                 <div class="project-card">
-                <div class="video-container">
-                    <video controls poster="endoscopy_preview.jpg">
-                    <source src="endoscopy_landing_demo.mp4" type="video/mp4">
-                    Ваш браузер не поддерживает видео.
-                    </video>
-                </div>
-                <div class="card-content">
-                    <h3> Лендинг по моторной эндоскопии</h3>
-                    <p>Адаптивный лендинг с анимацией, контактной формой и блоком преимуществ. Чистый HTML + CSS.</p>
-                    <p class="stack"><b>Технологии:</b> HTML5, CSS3, JS</p>
-                    <a href="https://angelok-5725.github.io/motor_endoscopy/" target="_blank">🔗 Смотреть исходники</a>
-                </div>
+                    <div class="video-container">
+                        <video controls poster="endoscopy_preview.jpg">
+                        <source src="endoscopy_landing_demo.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <h3> Лендинг по моторной эндоскопии</h3>
+                        <p>Адаптивный лендинг с анимацией, контактной формой и блоком преимуществ. Чистый HTML + CSS.</p>
+                        <p class="stack"><b>Технологии:</b> HTML5, CSS3, JS</p>
+                        <a href="https://angelok-5725.github.io/motor_endoscopy/" target="_blank">🔗 Смотреть исходники</a>
+                    </div>
                 </div>
 
                 <!-- Проект 3 -->
@@ -111,12 +113,36 @@
                 </div>
                 </div>
 
+                <!-- Проект 4 -->
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3> Система автоматизации опросов</h3>
+                        <p>
+                        Разработала систему на базе Google/Yandex Forms с автоматическим подсчётом результатов 
+                        и интерпретацией данных.
+
+                        Используется для HR-аналитики и оценки кандидатов.
+                        </p>
+                        <p class="stack"><b>Технологии:</b> Python, Google Forms, Яндекс Формы</p>
+                    </div>
+                </div>
+
             </div>
+        </section>
+        
+        <section id="extra">
+            <h2> Чем я полезна бизнесу</h2>
+            <ul>
+                <li>Автоматизирую рутинные процессы</li>
+                <li>Создаю инструменты вместо ручной работы</li>
+                <li>Быстро встраиваюсь в проекты</li>
+                <li>Довожу задачи до рабочего результата</li>
+            </ul>
         </section>
 
 
         <section id="education">
-            <h2>🎓 Образование</h2>
+            <h2> Образование</h2>
             <p><b>Каскеленский Гуманитарно-Технический колледж (2024)</b><br>Техник-программист, Программное обеспечение (по видам)</p>
         </section>
 
@@ -128,10 +154,12 @@
         </main>
 
         <footer>
-        <p>© 2025 Тамила Хамраева </p>
+        <p>© Тамила Хамраева </p>
         </footer>
     </div>
 
     <script src="script.js"></script>
 </body>
+<div id="tsparticles"></div>
+
 </html>

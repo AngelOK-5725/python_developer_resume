@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // =========================
-    // ✨ ПЕЧАТАЮЩИЙСЯ ТЕКСТ
+    //  ПЕЧАТАЮЩИЙСЯ ТЕКСТ
     // =========================
-    const text = "Тамила Хамраева";
+    const text = "Тамила Аскаровна";
     let i = 0;
     const typingEl = document.getElementById("typing");
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // =========================
-    // 🎬 АНИМАЦИЯ СЕКЦИЙ
+    //  АНИМАЦИЯ СЕКЦИЙ
     // =========================
     const sections = document.querySelectorAll("section");
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // =========================
-    // 🧲 МАГНИТНЫЕ КАРТОЧКИ
+    //  МАГНИТНЫЕ КАРТОЧКИ
     // =========================
     const cards = document.querySelectorAll(".project-card");
 
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // =========================
-    // 📩 КНОПКА СВЯЗИ (без ошибок)
+    //  КНОПКА СВЯЗИ (без ошибок)
     // =========================
     const contactBtn = document.getElementById("contactBtn");
 
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // =========================
-    // 🌌 ЧАСТИЦЫ (если подключены)
+    //  ЧАСТИЦЫ (если подключены)
     // =========================
     if (window.tsParticles) {
         tsParticles.load("tsparticles", {
